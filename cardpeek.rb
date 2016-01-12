@@ -20,7 +20,6 @@ class Cardpeek < Formula
   depends_on "gtk+3"
   depends_on "lua"
   depends_on "openssl"
-  depends_on :x11
 
   def install
     # always run autoreconf, needed to generate configure for --HEAD,
