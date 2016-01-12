@@ -4,7 +4,6 @@ class Smartsim < Formula
   sha256 "a0b088d69835fc85bb4410d03f8e91cdced90e362e4216797c3bd19ac8484b33"
   head "https://github.com/ashleynewson/smartsim"
 
-  depends_on :x11
   depends_on "gtk+3"
   depends_on "librsvg"
   depends_on "libxml2"
