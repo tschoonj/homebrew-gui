@@ -4,7 +4,6 @@ class Kernagic < Formula
   sha256 "41c328a2c177fd2c41f094641cdce4931115c34e69f140512d1461d42da502c2"
   head "https://github.com/hodefoting/kernagic.git"
 
-  depends_on :x11
   depends_on "pkg-config" => :build
   depends_on "gtk+"
 
