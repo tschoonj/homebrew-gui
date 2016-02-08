@@ -6,9 +6,9 @@ class Gtkwave < Formula
 
   bottle do
     cellar :any
-    sha256 "2ad4705fc8de2c8b5bff566a075f938e65117bbed5c6b54b05b1c87433965b09" => :el_capitan
-    sha256 "81dc8bab9aa104cb072042681e0eaa8d1b3b1c856bef17d9aa55bcdc048b7163" => :yosemite
-    sha256 "7408ae0aa0af02fa1447c6930f0909e065fe7fbccc82b8852f1f0de1e92b7152" => :mavericks
+    sha256 "62fdd1795ed9e8e22f0cd491d338cee12083543fd65a3cf3cb0534f40cee1ce4" => :el_capitan
+    sha256 "a98ca9697eb5eab7993ad4d534e5f5a2a85e776916e3b592a9a4c11f7fdca457" => :yosemite
+    sha256 "60b0470f23ed6f7fb751a8f905b5c31f9c1f30a405271525a7046ca864ebb0dd" => :mavericks
   end
 
   depends_on "pkg-config" => :build
