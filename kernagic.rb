@@ -4,6 +4,13 @@ class Kernagic < Formula
   sha256 "41c328a2c177fd2c41f094641cdce4931115c34e69f140512d1461d42da502c2"
   head "https://github.com/hodefoting/kernagic.git"
 
+  bottle do
+    cellar :any
+    sha256 "65891dbc2169da37b31eb2433e3636e37cd668a9f69d10406975934b0668b68b" => :el_capitan
+    sha256 "a9e51ff4ad2ddc2ee348e5f3062e049ba19be87962a6f04a7816107daf79a65b" => :yosemite
+    sha256 "c49fb0afcd88658cd5007fba4cf2d97b1b35458ce6479c69b1d8d484c5ede869" => :mavericks
+  end
+
   depends_on "pkg-config" => :build
   depends_on "gtk+"
 
