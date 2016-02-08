@@ -6,9 +6,9 @@ class Meld < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "a6e9e4c68d52cf72ab451b5a319c1207af1c4840b19493023e03d3a9152b0563" => :el_capitan
-    sha256 "0bfcae31b88b623cced5c3f6de060f70fe7fde35cbf7b641fca31cddea3c0cca" => :yosemite
-    sha256 "6f6754050775367b8f81e69794edb306424c5cb870cd9e9c5d60e578fd9ad898" => :mavericks
+    sha256 "c5028e6b49cc3e10296ddd0bfa857bd847192e9ee513e2fb02e6d7d90608d512" => :el_capitan
+    sha256 "919ea6d850de768c1ed5a499c56c080b777f75ef687097fac623106dfddaa18f" => :yosemite
+    sha256 "687a6ab9a890de3f2a260cb2f82aaacbf841b2a78da01f83c0265aa643b2b433" => :mavericks
   end
 
   depends_on "intltool" => :build
