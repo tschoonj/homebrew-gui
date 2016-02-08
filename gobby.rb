@@ -8,9 +8,9 @@ class Gobby < Formula
   head "git://git.0x539.de/git/gobby.git"
 
   bottle do
-    sha256 "a60a3212c50e11f1a3fb1997bb2d9105d16b3e70c453a7c9615e140cd427926f" => :el_capitan
-    sha256 "293979a8259880fc1652425af13df03bd31eba70fa7e75cf5453e6c959c90954" => :yosemite
-    sha256 "471b70aa53d01f8c545876d52380eafbbafe34626bdaca33c9f3d7ec4d230cc3" => :mavericks
+    sha256 "9fa7504d992ec5b6ad3fba07186188988918f8dc72f80c7d5a1bfdd4778a18d2" => :el_capitan
+    sha256 "0517e9bddd65309205bd8bc5351c157b571394bec99f82d1528478a94ac7a180" => :yosemite
+    sha256 "d8dc4cb490264f223c175cfe8764b2f73c9abb20883689ddbd5241744671c016" => :mavericks
   end
 
   # necessary to remove mandatory gtk-mac-integration
