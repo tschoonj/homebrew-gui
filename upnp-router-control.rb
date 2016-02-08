@@ -6,9 +6,9 @@ class UpnpRouterControl < Formula
   revision 1
 
   bottle do
-    sha256 "3ceccf8fa6769da1d774259e1402e50a9c866b67782f8b1837efa3299f27f421" => :yosemite
-    sha256 "75adbd8b58dccc704460e6354e7a94f43102806f54e31166702bfab7c628f444" => :mavericks
-    sha256 "f5f105a0c1c85f2949431514105d56a050e671e47e9b43742276a2907d7e777e" => :mountain_lion
+    sha256 "417cb8bd581eea275f912ab449559d68a8b19223619d3b2bf95e8912876018c9" => :el_capitan
+    sha256 "4f219dc5295a1c05ace1a2fcdb0d73d5bcc38a721155ff325433e79d653faaa5" => :yosemite
+    sha256 "07d83a8956c678fadb14940b325a6db2e23a3e8159ba9e79cc6d2a8a722ecd30" => :mavericks
   end
 
   head do
