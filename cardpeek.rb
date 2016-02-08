@@ -6,9 +6,9 @@ class Cardpeek < Formula
 
   bottle do
     cellar :any
-    sha256 "e74308982f81ae050d341c8fd93473124570289d9ba7f0d4392b0b22eeddad94" => :yosemite
-    sha256 "2901819124ad9f0d2ed67bf6eace436f02d3c6b590790aac3cbfe78db94602f4" => :mavericks
-    sha256 "6c97f5322f10e240c7b27efdc7d13e289c6f147e3a4a88db301cc32eec94ebce" => :mountain_lion
+    sha256 "5a370f77494e2dadb16bf37bf7838fed6c26841b8354a6c92323e9553cc5e3f0" => :el_capitan
+    sha256 "7b2e3f1d05316f6f7d001898bfe6028ef98a9f40b561e4bd89bc1d77531d7dce" => :yosemite
+    sha256 "16993be903b7a9c5e8cd64f930aa221837dcd387dc3af4e88c508cee585fed17" => :mavericks
   end
 
   head "https://cardpeek.googlecode.com/svn/trunk/"
