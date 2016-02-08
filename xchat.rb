@@ -6,9 +6,9 @@ class Xchat < Formula
   revision 2
 
   bottle do
-    sha256 "1a6d55ef8ce33fdf58fadc64bb8c7664fdff9c851fcc9932e1bd8e0e83c85a44" => :yosemite
-    sha256 "7d9782053eafb2b0c2024c03546456fad00ec21800161b5c3e536f005c046bd3" => :mavericks
-    sha256 "aa66f27c3cbd710761deb02e525dfa4c4888c4d9216cb1d38036467dbd7fb12d" => :mountain_lion
+    sha256 "8583f805e448478b0740327718d5bc2cd5bfba11e78f5af366ed97a6a6d81822" => :el_capitan
+    sha256 "b4a8763d93edf4f7476e79377f8e2e610b88c4839a612a7cc81006ec7bc4828b" => :yosemite
+    sha256 "9fe2f32450cbde4022bb3337105de0dba3f877453bf8445c545e88f3c038362c" => :mavericks
   end
 
   depends_on "pkg-config" => :build
