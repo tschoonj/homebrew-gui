@@ -6,9 +6,9 @@ class Geeqie < Formula
   revision 2
 
   bottle do
-    sha256 "66ebef31e8351dd86e3121d5574a429547dd7f9f8e6c87058e3c69c8675a7e0b" => :yosemite
-    sha256 "ee20b9403c52f9a7f448d2fab5270bcec0e3787fc3a8fe6cac9dbf18d65fced3" => :mavericks
-    sha256 "278d6700b28fcccbc3c90d9af308ea298ce5cad7a3c5b72910a31998e8763ed8" => :mountain_lion
+    sha256 "0e66dc0230ed6f10a29e7f9e14a4fe17cb8513ca868e55935783613eadd440ab" => :el_capitan
+    sha256 "b5aca2da01efe158d87adbd9c9a31865b9ea8c779d5f469484486ace8f931c51" => :yosemite
+    sha256 "25f034fd0ad78011464619acfacb550ca81e1d4ba27362136cab15b108603831" => :mavericks
   end
 
   depends_on "pkg-config" => :build
