@@ -6,10 +6,9 @@ class Klavaro < Formula
   sha256 "ed71d522c29113d5d6517a65cbf95dafbe85ca4bb978139b804b98f128015e85"
 
   bottle do
-    revision 1
-    sha256 "ca9fadbcc99ea26944e4704496e5b4dbaba5aa9d12e189a14238aa67c348f16c" => :yosemite
-    sha256 "2f6457e0d5dd320fac6ccd0e4bd0f83a685035df647db7a0353d1c10d03b2308" => :mavericks
-    sha256 "23e5f78422715b7083eab33788821e64c5d244ba9fd3a5fd408ace93260dc5b1" => :mountain_lion
+    sha256 "93914a2c1ab59e2584c76289e3bb70932093a255e88a459676c73fd053e69953" => :el_capitan
+    sha256 "185b17400268d72f35ba0d0f3b3636ad38b65a30a12aac1686efb29eecdc39ee" => :yosemite
+    sha256 "187ec06c8715d18402ec0aa445ad80ece89a38fdca7d087f0e828d98d7cc3cc5" => :mavericks
   end
 
   depends_on "pkg-config" => :build
