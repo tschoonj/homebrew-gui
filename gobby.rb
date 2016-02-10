@@ -3,27 +3,15 @@ class Gobby < Formula
   homepage "http://gobby.0x539.de"
   url "http://releases.0x539.de/gobby/gobby-0.5.0.tar.gz"
   sha256 "8ceb3598d27cfccdf9c9889b781c4c5c8e1731ca6beb183f5d4555644c06bd98"
-  revision 2
+  revision 3
 
   head "git://git.0x539.de/git/gobby.git"
-
-  bottle do
-    sha256 "9fa7504d992ec5b6ad3fba07186188988918f8dc72f80c7d5a1bfdd4778a18d2" => :el_capitan
-    sha256 "0517e9bddd65309205bd8bc5351c157b571394bec99f82d1528478a94ac7a180" => :yosemite
-    sha256 "d8dc4cb490264f223c175cfe8764b2f73c9abb20883689ddbd5241744671c016" => :mavericks
-  end
-
-  # necessary to remove mandatory gtk-mac-integration
-  # it's badly broken as it depends on an ancient version of ige-mac-integration
-  # since it depends on gtk3, it doesn't even need gtk-mac-integration anymore
-  # This has already been fixed upstream: gtk2 support has been dropped completely
-  # and all traces of ige-mac-integration have been removed from the code
-  patch :DATA
 
   depends_on "pkg-config" => :build
   depends_on "intltool" => :build
   depends_on "gtkmm3"
   depends_on "gsasl"
+  depends_on "gnutls"
   depends_on "libxml++"
   depends_on "gtksourceview3"
   depends_on "gettext"
@@ -31,6 +19,13 @@ class Gobby < Formula
   depends_on "libinfinity"
 
   needs :cxx11
+
+  # Necessary to remove mandatory gtk-mac-integration
+  # it's badly broken as it depends on an ancient version of ige-mac-integration
+  # since it depends on gtk3, it doesn't even need gtk-mac-integration anymore
+  # This has already been fixed upstream: gtk2 support has been dropped completely
+  # and all traces of ige-mac-integration have been removed from the code
+  patch :DATA
 
   def install
     ENV.cxx11
@@ -41,7 +36,7 @@ class Gobby < Formula
 
   test do
     # executable (GUI)
-    system "gobby-0.5", "--version"
+    system bin/"gobby-0.5", "--version"
   end
 end
 __END__
