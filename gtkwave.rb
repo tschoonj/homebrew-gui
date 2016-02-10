@@ -19,7 +19,7 @@ class Gtkwave < Formula
   def install
     args = ["--disable-dependency-tracking",
             "--disable-silent-rules",
-            "--prefix=#{prefix}"
+            "--prefix=#{prefix}",
            ]
 
     unless MacOS::CLT.installed?
