@@ -1,8 +1,8 @@
 class EasyTag < Formula
   desc "Application for viewing and editing audio file tags"
   homepage "https://projects.gnome.org/easytag"
-  url "https://download.gnome.org//sources/easytag/2.4/easytag-2.4.1.tar.xz"
-  sha256 "b9ef5f47572f44985922230f94b5ac908d4c7a12430dac662fdf1b48c7e577d5"
+  url "https://download.gnome.org//sources/easytag/2.4/easytag-2.4.2.tar.xz"
+  sha256 "148129cc948c05b0560aeb60fb06260b8550f252a88eb439d8c7fee7ec10d2e6"
 
   bottle do
     sha256 "e697b0c355391b156461892805c5e9c3194bfcbd57ced1ff841a743bf1bd151d" => :el_capitan
