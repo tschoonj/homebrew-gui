@@ -17,6 +17,7 @@ class Hexchat < Formula
     depends_on "automake" => :build
     depends_on "autoconf" => :build
     depends_on "libtool" => :build
+    depends_on "autoconf-archive" => :build
   end
 
   option "without-perl", "Build without Perl support"
