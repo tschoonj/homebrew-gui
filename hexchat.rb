@@ -1,10 +1,8 @@
 class Hexchat < Formula
   desc "An IRC client based on XChat"
   homepage "https://hexchat.github.io/"
-  url "https://dl.hexchat.net/hexchat/hexchat-2.10.2.tar.xz"
-  mirror "https://mirrors.kernel.org/debian/pool/main/h/hexchat/hexchat_2.10.2.orig.tar.xz"
-  sha256 "87ebf365c576656fa3f23f51d319b3a6d279e4a932f2f8961d891dd5a5e1b52c"
-  revision 1
+  url "https://dl.hexchat.net/hexchat/hexchat-2.12.1.tar.xz"
+  sha256 "5201b0c6d17dcb8c2cb79e9c39681f8e052999ba8f7b5986d5c1e7dc68fa7c6b"
 
   bottle do
     sha256 "d7779c8e815a1a1e10ce39aa193b61dae38a51f190e8a56a96533e4aee70460f" => :el_capitan
@@ -25,25 +23,26 @@ class Hexchat < Formula
 
   depends_on "pkg-config" => :build
   depends_on "intltool" => :build
-  depends_on :python => :optional
-  depends_on :python3 => :optional
   depends_on "gettext"
   depends_on "gtk+"
   depends_on "gtk-mac-integration"
   depends_on "openssl"
+  depends_on :python => :optional
+  depends_on :python3 => :optional
+  depends_on "lua" => :optional
 
   def install
-    args = %W[--prefix=#{prefix}
-              --disable-dependency-tracking
-              --enable-openssl]
+    args = %W[
+      --prefix=#{prefix}
+      --disable-dependency-tracking
+      --disable-silent-rules
+      --enable-openssl=#{Formula["openssl"].opt_prefix}
+    ]
 
     if build.with? "python3"
-      py_ver = Formula["python3"].version.to_s[0..2] # e.g "3.4"
-      ENV.append_path "PKG_CONFIG_PATH", "#{HOMEBREW_PREFIX}/Frameworks/Python.framework/Versions/#{py_ver}/lib/pkgconfig/"
-      args << "--enable-python=python#{py_ver}"
+      ENV.delete("PYTHONPATH")
+      args << "--enable-python=python3"
     elsif build.with? "python"
-      ENV.append_path "PKG_CONFIG_PATH", "#{HOMEBREW_PREFIX}/Frameworks/Python.framework/Versions/2.7/lib/pkgconfig/"
-      ENV.append_path "PKG_CONFIG_PATH", "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/pkgconfig/"
       args << "--enable-python=python2.7"
     else
       args << "--disable-python"
@@ -51,6 +50,10 @@ class Hexchat < Formula
 
     args << "--disable-perl" if build.without? "perl"
     args << "--disable-plugin" if build.without? "plugins"
+    args << "--disable-lua" if build.without? "lua"
+
+    # https://github.com/hexchat/hexchat/issues/1657
+    args << "--disable-sysinfo" if MacOS.version <= :mavericks
 
     if build.head?
       system "./autogen.sh", *args
