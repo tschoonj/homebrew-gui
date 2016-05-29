@@ -2,10 +2,11 @@ require "language/haskell"
 
 class Threadscope < Formula
   include Language::Haskell::Cabal
-  desc "A tool for performance profiling of parallel Haskell programs"
+  desc "Tool for performance profiling of parallel Haskell programs"
   homepage "https://wiki.haskell.org/ThreadScope"
   url "https://hackage.haskell.org/package/threadscope-0.2.7/threadscope-0.2.7.tar.gz"
   sha256 "cc5653831252d55b3ba7506ea648e770b2c4489cdf4d78828f07dc24ea7ffdb6"
+  revision 1
 
   bottle do
     sha256 "0044dd4cd50768ee1260e8cf835aef369f5495b6df2de7c394a90f5fe41aa4d9" => :el_capitan
@@ -26,17 +27,10 @@ class Threadscope < Formula
   depends_on "pango"
 
   def install
-    cabal_sandbox do
-      cabal_install_tools "alex", "happy"
-      cabal_install "--only-dependencies", "ghc-events"
-      cabal_install "--prefix=#{prefix}", "ghc-events"
-      cabal_install_tools "gtk2hs-buildtools"
-      cabal_install "glib", "gio", "cairo", "pango"
-      cabal_install "-fhave-quartz-gtk", "gtk"
-      cabal_install "--only-dependencies"
-      cabal_install "--prefix=#{prefix}"
+    install_cabal_package "ghc-events", :using => ["alex", "happy"] do
+      cabal_install "--flags=have-quartz-gtk", "gtk"
+      install_cabal_package
     end
-    cabal_clean_lib
   end
 
   test do
