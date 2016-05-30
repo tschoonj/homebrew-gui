@@ -9,9 +9,9 @@ class Threadscope < Formula
   revision 1
 
   bottle do
-    sha256 "0044dd4cd50768ee1260e8cf835aef369f5495b6df2de7c394a90f5fe41aa4d9" => :el_capitan
-    sha256 "49d59338f6f2223109f2636914c1492ca64c9a426e9e7acef2378c0efbd171d4" => :yosemite
-    sha256 "393128cf0b17ee8a482b9a306d0f7698503c1ce6781fe145321103b4da379094" => :mavericks
+    sha256 "cc98500fc15f9415bc3ee72fd0486d3e8c6c46025a436148a30fb4f5ed87547f" => :el_capitan
+    sha256 "37453f9d0350cf9af17a7827e3e4bf14ab1afb19953c10d623f10a5367a1b9b6" => :yosemite
+    sha256 "d9614ba57d0fcc3da58464beef32cdc4baf3241760f900a6a0b9e64498b32c44" => :mavericks
   end
 
   depends_on "cabal-install" => :build
