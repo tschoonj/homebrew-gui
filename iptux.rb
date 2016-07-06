@@ -1,7 +1,8 @@
 class Iptux < Formula
+  desc "Software for sharing in LAN"
   homepage "https://github.com/iptux-src/iptux"
-  url "https://github.com/iptux-src/iptux/archive/v0.6.2.tar.gz"
-  sha256 "d567096d97b3b168dde1510f0ca00a13c6f8bb596131c234482377d7d8fb211b"
+  url "https://github.com/iptux-src/iptux/archive/v0.6.3.tar.gz"
+  sha256 "91f4e478a4adfbfdb67be155fb68d01aa58cff9b2b27cd1dfe0dd1d4a4c26d93"
 
   bottle do
     sha256 "c24e790c78d6928472bd0740a843228715d9721f81e9a1e6f5f907b9fa7116eb" => :el_capitan
