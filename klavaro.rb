@@ -1,9 +1,8 @@
 class Klavaro < Formula
-  desc "A free touch typing tutor program"
+  desc "Free touch typing tutor program"
   homepage "http://klavaro.sourceforge.net/"
-  url "https://downloads.sourceforge.net/project/klavaro/klavaro-3.01.tar.bz2"
-  mirror "https://mirrors.kernel.org/debian/pool/main/k/klavaro/klavaro_3.01.orig.tar.bz2"
-  sha256 "ed71d522c29113d5d6517a65cbf95dafbe85ca4bb978139b804b98f128015e85"
+  url "https://downloads.sourceforge.net/project/klavaro/klavaro-3.02.tar.bz2"
+  sha256 "5f77730a8c1c8dfd4443ec8390c7226e3f82537df0882cd1222b140f0d0fcd6c"
 
   bottle do
     sha256 "93914a2c1ab59e2584c76289e3bb70932093a255e88a459676c73fd053e69953" => :el_capitan
