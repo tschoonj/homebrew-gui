@@ -1,8 +1,8 @@
 class Gtkwave < Formula
-  desc "A fully featured GTK+ based wave viewer"
+  desc "Fully featured GTK+ based wave viewer"
   homepage "http://gtkwave.sourceforge.net/"
-  url "http://gtkwave.sourceforge.net/gtkwave-3.3.68.tar.gz"
-  sha256 "9846ced0601c32c87bfda236ccadc2c6435a76c3a799b0d17ed54a5d7391343e"
+  url "http://gtkwave.sourceforge.net/gtkwave-3.3.73.tar.gz"
+  sha256 "57bc88efa248c9f76950a49e7ff6a3f4a2062cb512fe7eb2e86976eb7f2be86a"
 
   bottle do
     cellar :any
@@ -19,8 +19,7 @@ class Gtkwave < Formula
   def install
     args = ["--disable-dependency-tracking",
             "--disable-silent-rules",
-            "--prefix=#{prefix}",
-           ]
+            "--prefix=#{prefix}"]
 
     unless MacOS::CLT.installed?
       args << "--with-tcl=#{MacOS.sdk_path}/System/Library/Frameworks/Tcl.framework"
