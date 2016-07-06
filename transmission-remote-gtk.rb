@@ -5,9 +5,9 @@ class TransmissionRemoteGtk < Formula
   sha256 "d2be9d3f6d14a79d8f94c5423b1d9ac0373b1af9c67fc551d8732a1d86904993"
 
   bottle do
-    sha256 "43bb2154c2ae72de79d279622fcba23b1891404c8ad1bcc047335faad59291b5" => :el_capitan
-    sha256 "31d4aa3cba2fa14a36f1a1e727402e46ed3e7757763ebd9da6c8b8060751df80" => :yosemite
-    sha256 "66f9c3d4ae7ac5949a4f9d6d72c1ccfde14ae2d761e141f68d5014d9b13879eb" => :mavericks
+    sha256 "66d37cefff6690f5295d62aaf724559124d148440fe4801d498e199b03cbd7ce" => :el_capitan
+    sha256 "0f02165bff2345a47efa536bd1c88e5179b32b2c45080780e5ed908095b8f47b" => :yosemite
+    sha256 "9c9a223e1b669b32f9b1d8d3733e632a7507878c709aae244993ff850c126019" => :mavericks
   end
 
   depends_on "intltool" => :build
