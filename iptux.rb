@@ -5,9 +5,9 @@ class Iptux < Formula
   sha256 "91f4e478a4adfbfdb67be155fb68d01aa58cff9b2b27cd1dfe0dd1d4a4c26d93"
 
   bottle do
-    sha256 "c24e790c78d6928472bd0740a843228715d9721f81e9a1e6f5f907b9fa7116eb" => :el_capitan
-    sha256 "8c46792ae8a379a74fb9552e2307ee848cd1791d1fd24a9fe83b9656efd432ee" => :yosemite
-    sha256 "24d1570b4fd4bf4f27993f503b25ec911243d2bb1da0771505dc53fa0bb04b16" => :mavericks
+    sha256 "b867d2b3e9a0109ffe2dce855088f1dc2ddc5f038bbace01e530ce187527f746" => :el_capitan
+    sha256 "a2cc902c05ec939a80aedd9f22c437fa7511a7cd2f21a4d2452d70426cf2fbab" => :yosemite
+    sha256 "d250d2e82be2130d0d7b47410f0dadbb002d7b769072ce1babc17571ff7ed52f" => :mavericks
   end
 
   depends_on "gettext"
