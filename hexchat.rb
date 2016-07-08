@@ -41,6 +41,8 @@ class Hexchat < Formula
 
     if build.with? "python3"
       ENV.delete("PYTHONPATH")
+      # https://github.com/Homebrew/homebrew-gui/pull/9
+      ENV["PYTHON_EXTRA_LIBS"] = " "
       args << "--enable-python=python3"
     elsif build.with? "python"
       args << "--enable-python=python2.7"
