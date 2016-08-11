@@ -1,5 +1,5 @@
 class Inkscape < Formula
-  desc "A professional vector graphics editor"
+  desc "Professional vector graphics editor"
   homepage "https://inkscape.org/"
   url "https://inkscape.org/en/gallery/item/3854/inkscape-0.91.tar.gz"
   mirror "https://mirrors.kernel.org/debian/pool/main/i/inkscape/inkscape_0.91.orig.tar.gz"
