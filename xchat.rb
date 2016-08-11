@@ -1,5 +1,5 @@
 class Xchat < Formula
-  desc "An IRC chat program"
+  desc "IRC chat program"
   homepage "http://xchat.org"
   url "http://xchat.org/files/source/2.8/xchat-2.8.8.tar.bz2"
   sha256 "0d6d69437b5e1e45f3e66270fe369344943de8a1190e498fafa5296315a27db0"
