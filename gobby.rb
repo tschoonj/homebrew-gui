@@ -1,5 +1,5 @@
 class Gobby < Formula
-  desc "A collaborative editor supporting multiple documents a multi-use chatbox"
+  desc "Multi-platform collaborative text editor"
   homepage "http://gobby.0x539.de"
   url "http://releases.0x539.de/gobby/gobby-0.5.0.tar.gz"
   sha256 "8ceb3598d27cfccdf9c9889b781c4c5c8e1731ca6beb183f5d4555644c06bd98"
