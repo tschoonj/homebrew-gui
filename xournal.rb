@@ -1,5 +1,5 @@
 class Xournal < Formula
-  desc "An application for notetaking and sketching using a stylus"
+  desc "Application for notetaking and sketching using a stylus"
   homepage "http://xournal.sourceforge.net"
   url "https://downloads.sourceforge.net/xournal/xournal-0.4.8.tar.gz"
   sha256 "233887a38136452dcb4652c35d08366fc7355f57ed46753db83e3e0f3193ef30"
