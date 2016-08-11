@@ -1,5 +1,5 @@
 class Hexchat < Formula
-  desc "An IRC client based on XChat"
+  desc "IRC client based on XChat"
   homepage "https://hexchat.github.io/"
   url "https://dl.hexchat.net/hexchat/hexchat-2.12.1.tar.xz"
   sha256 "5201b0c6d17dcb8c2cb79e9c39681f8e052999ba8f7b5986d5c1e7dc68fa7c6b"
