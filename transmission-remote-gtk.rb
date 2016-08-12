@@ -1,8 +1,8 @@
 class TransmissionRemoteGtk < Formula
   desc "GTK remote interface to the Transmission BT client"
   homepage "https://github.com/transmission-remote-gtk/transmission-remote-gtk"
-  url "https://github.com/transmission-remote-gtk/transmission-remote-gtk/releases/download/1.2/transmission-remote-gtk-1.2.tar.gz"
-  sha256 "d2be9d3f6d14a79d8f94c5423b1d9ac0373b1af9c67fc551d8732a1d86904993"
+  url "https://github.com/transmission-remote-gtk/transmission-remote-gtk/releases/download/1.3.0/transmission-remote-gtk-1.3.0.tar.xz"
+  sha256 "6fe30b4561681458500e61cc6db10c3b4b3771f69e2f6a74dbb7a20b03a3cbe6"
 
   bottle do
     sha256 "66d37cefff6690f5295d62aaf724559124d148440fe4801d498e199b03cbd7ce" => :el_capitan
