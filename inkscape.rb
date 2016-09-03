@@ -7,9 +7,9 @@ class Inkscape < Formula
   revision 4
 
   bottle do
-    sha256 "e80038c1adc609726d855f5eb11bc823f0e4e247a063642d09befea099979f3a" => :el_capitan
-    sha256 "f3023536ae998210d2f05e609b8009d2363ad050e477faa5765627743235cc26" => :yosemite
-    sha256 "c3d06a90632d4071db222e13cb8637719d21c52f29e7865a5cbd7a20c569d148" => :mavericks
+    sha256 "ee5064b2c82543cb0edb8f0bc18b31218acf736e150023a4ae0f715191aaf54c" => :el_capitan
+    sha256 "fd736662bb632af27e49999f0e8a5b6c403d6ea647cc6d9e91d72aebc467e216" => :yosemite
+    sha256 "001db36d070bffe3697ed02472fb8ab670589734142600fa4af7f3e22e6fc380" => :mavericks
   end
 
   head do
