@@ -1,8 +1,8 @@
 class Hexchat < Formula
   desc "IRC client based on XChat"
   homepage "https://hexchat.github.io/"
-  url "https://dl.hexchat.net/hexchat/hexchat-2.12.2.tar.xz"
-  sha256 "6dad783f37aac32a8301a12d498af7a74900f011aec4e77bb378ae9797a3ccf6"
+  url "https://dl.hexchat.net/hexchat/hexchat-2.12.3.tar.xz"
+  sha256 "6f2b22372c7a9ed8ffab817079638e8f4178f5f8ba63c89cb3baa01be614f2ba"
 
   bottle do
     sha256 "913a9f541e58edbfabecc3af78be1e138297d17cc2019c2a8cd3abc0cd07b5af" => :sierra
