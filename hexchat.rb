@@ -5,9 +5,9 @@ class Hexchat < Formula
   sha256 "6f2b22372c7a9ed8ffab817079638e8f4178f5f8ba63c89cb3baa01be614f2ba"
 
   bottle do
-    sha256 "913a9f541e58edbfabecc3af78be1e138297d17cc2019c2a8cd3abc0cd07b5af" => :sierra
-    sha256 "40e77ac17f46d79b691c4e32887990ff587c5cbbc7173db8b015ea7eb377875e" => :el_capitan
-    sha256 "2f90b613b164bcf5b9a2af17d50cc9fc4ac5d1455eae8cd819d18a6a322a00d7" => :yosemite
+    sha256 "28394453cdf0cd93b3e2af46a940de00ccbe57b9e0b2cdfae666e9365da9e108" => :sierra
+    sha256 "a432a7905a20807635f0dd969967c01a6c4a3aa118e2ec2e44f89f992d003cd4" => :el_capitan
+    sha256 "615a980cecbde57c6822cacf0f2b534896e0b323a4c9ec7dae8a7648aa8d6b48" => :yosemite
   end
 
   head do
