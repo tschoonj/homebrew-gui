@@ -1,8 +1,8 @@
 class Luyten < Formula
   desc "Java decompiler GUI for Procyon"
   homepage "https://deathmarine.github.io/Luyten/"
-  url "https://github.com/deathmarine/Luyten/releases/download/v0.4.9/luyten-0.4.9.jar", :using => :nounzip
-  sha256 "8e2872292dd9d2bbf723fd9403fdc6260a7b84a8324bd59aead0cc4ecdaaa520"
+  url "https://github.com/deathmarine/Luyten/releases/download/v0.5.0/luyten-0.5.0.jar", :using => :nounzip
+  sha256 "2ef5f677a193eaf2a04fbeefc3f6ff480a34067dec22af5cb3cc63f6bc95ebdc"
 
   head do
     url "https://github.com/deathmarine/Luyten.git"
