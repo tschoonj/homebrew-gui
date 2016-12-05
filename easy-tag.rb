@@ -5,9 +5,9 @@ class EasyTag < Formula
   sha256 "fc51ee92a705e3c5979dff1655f7496effb68b98f1ada0547e8cbbc033b67dd5"
 
   bottle do
-    sha256 "655d12218f01ab241b48986a3a3d9dfd62a8a13b09d1ad57e1d714b2a2cd9d9b" => :el_capitan
-    sha256 "54585f64205baa27426597bb0b31112a5f319a83c57b0e1db48c60421821279e" => :yosemite
-    sha256 "60df2faa428e6762783eaa7e4500db10d94d5f119b20650b01b8c30ff4c0b98d" => :mavericks
+    sha256 "a15a448166843487c51a396504d15e7bb58cfddda832b6b801fd533bf6d7177c" => :sierra
+    sha256 "1381de558f9fd9ee2fe6d2af9e5108e596ed8f431cd88604e735671996453d89" => :el_capitan
+    sha256 "3c448391abd6fcf29cbd303ba2bcff5e18f8fda2c8c3e8ee1079e1a9a2778333" => :yosemite
   end
 
   depends_on "pkg-config" => :build
